@@ -1,20 +1,4 @@
-package com.wink.utils;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
-
-import com.wink.fragment.ResetPasswordFragment;
-
-import android.util.Log;
-
-/**
- * String utility class to perform common string operation.
- * 
- * @author bhavesh.kaila
- * 
- */
 public class StringUtils {
 	
 	private static String TAG = StringUtils.class.getSimpleName();

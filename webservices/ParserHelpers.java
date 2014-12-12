@@ -1,9 +1,3 @@
-package com.wink.webservices;
-
-import android.os.Message;
-
-import com.wink.exceptionhandlers.CustomException;
-import com.wink.webservices.responsebean.BaseResponse;
 
 
 public class ParserHelpers {

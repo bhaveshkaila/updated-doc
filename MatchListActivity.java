@@ -1,39 +1,4 @@
-package com.fifa.android.activity;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ListView;
-import android.widget.Toast;
-
-import com.actionbarsherlock.app.SherlockFragmentActivity;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
-import com.actionbarsherlock.view.SubMenu;
-import com.fifa.android.adapter.MatchListAdapter;
-import com.fifa.android.application.FifaApplication;
-import com.fifa.android.customview.CustomProgressbar;
-import com.fifa.android.listview.PullToRefresh_Master;
-import com.fifa.android.listview.PullToRefresh_Master.OnRefreshListener;
-import com.fifa.android.localstorage.UserSharedPreferences;
-import com.wc.brasil.fifa.app.R;
-import com.fifa.android.model.Matches;
-import com.fifa.android.utils.AppConstant;
-import com.fifa.android.utils.CommonUtils;
-import com.fifa.android.utils.ValidationUtils;
-import com.fifa.android.webservices.WebServiceManager;
-import com.fifa.android.webservices.responsebean.CompetationMatchResponse;
-import com.googlecode.androidannotations.annotations.AfterViews;
-import com.googlecode.androidannotations.annotations.Background;
-import com.googlecode.androidannotations.annotations.EActivity;
-import com.googlecode.androidannotations.annotations.UiThread;
-@SuppressLint({ "ShowToast", "ResourceAsColor" })
 @EActivity
 public class MatchListActivity  extends SherlockFragmentActivity implements OnItemClickListener  {
 

@@ -1,12 +1,4 @@
-package com.wink.utils;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import android.content.Context;
-import android.content.pm.PackageInfo;
-
-import com.wink.model.AndroidApp;
 
 public class DetectFakeLocationAppUtil {
 

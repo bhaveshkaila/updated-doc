@@ -1,9 +1,3 @@
-package com.wink.webservices;
-
-import org.apache.http.conn.ClientConnectionManager;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
-import org.apache.http.params.HttpParams;
 
 public class HttpClientFactory {
 

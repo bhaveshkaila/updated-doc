@@ -1,14 +1,3 @@
-package com.wink.utils;
-
-import java.io.IOException;
-
-import uk.me.jstott.jcoord.LatLng;
-import android.content.Context;
-import android.location.Address;
-import android.util.Log;
-
-import com.wink.application.WinkApplication;
-import com.wink.model.Venue;
 
 public class LocationUtils {
 

@@ -1,6 +1,4 @@
-package com.wink.model;
 
-import com.google.gson.annotations.SerializedName;
 
 public class Group {
 

@@ -1,41 +1,4 @@
-package com.wink.utils;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.concurrent.ExecutionException;
-
-import android.app.AlertDialog;
-import android.app.Service;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.location.Address;
-import android.location.Geocoder;
-import android.location.Location;
-import android.location.LocationManager;
-import android.os.AsyncTask;
-import android.os.IBinder;
-import android.provider.Settings;
-import android.support.v4.content.LocalBroadcastManager;
-import android.util.Log;
-
-import com.wink.R;
-import com.wink.custom.view.CustomAlertDialog;
-import com.wink.localstorage.UserSharedPreferences;
-import com.wink.model.Venue;
-import com.wink.utils.GPSLocator.LocationResult;
-import com.wink.webservices.WebServiceManager;
-import com.wink.webservices.responsebean.Addresses;
-import com.wink.webservices.responsebean.Components;
-
-/**
- * String utility class to perform common string operation.
- * 
- * @author bhavesh.kaila
- * 
- */
 public class GPSTracker extends Service implements /* LocationListener, */LocationResult {
 
 	private static final String TAG = GPSTracker.class.getSimpleName();

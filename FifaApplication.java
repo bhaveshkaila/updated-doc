@@ -1,20 +1,4 @@
-package com.fifa.android.application;
 
-import java.io.File;
-import java.util.List;
-
-import uk.co.senab.bitmapcache.BitmapLruCache;
-import android.app.Application;
-import android.content.Context;
-import android.os.Environment;
-
-import com.facebook.model.GraphUser;
-import com.wc.brasil.fifa.app.R;
-import com.fifa.android.analitics.GoogleAnalyticsTrackerManager;
-import com.fifa.android.customview.CustomViewConstants;
-import com.nostra13.universalimageloader.core.DisplayImageOptions;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 public class FifaApplication extends Application {
 

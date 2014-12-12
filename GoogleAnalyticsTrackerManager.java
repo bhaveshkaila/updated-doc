@@ -1,25 +1,4 @@
-package com.fifa.android.analitics;
 
-import android.content.Context;
-import android.support.v4.app.FragmentActivity;
-
-import com.wc.brasil.fifa.app.R;
-import com.google.analytics.tracking.android.EasyTracker;
-import com.google.analytics.tracking.android.ExceptionReporter;
-import com.google.analytics.tracking.android.Fields;
-import com.google.analytics.tracking.android.GAServiceManager;
-import com.google.analytics.tracking.android.GoogleAnalytics;
-import com.google.analytics.tracking.android.Logger;
-import com.google.analytics.tracking.android.MapBuilder;
-import com.google.analytics.tracking.android.StandardExceptionParser;
-import com.google.analytics.tracking.android.Tracker;
-
-/**
- * String utility class to perform common string operation.
- * 
- * @author bhavesh.kaila
- * 
- */
 public class GoogleAnalyticsTrackerManager {
 
     private GoogleAnalytics googleAnalytics;

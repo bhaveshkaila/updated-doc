@@ -1,8 +1,4 @@
-package com.wink.database;
 
-/**
- * Created by bhavesh.kaila on 31/7/13.
- */
 public interface DBConstants {
 
 	String TABLE_MESSAGES = "Messages";

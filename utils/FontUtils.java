@@ -1,12 +1,4 @@
-package com.wink.utils;
 
-import android.content.Context;
-import android.content.res.TypedArray;
-import android.graphics.Typeface;
-import android.util.AttributeSet;
-import android.view.View;
-import android.widget.TextView;
-import com.wink.R;
 
 public class FontUtils {
 

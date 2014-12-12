@@ -1,23 +1,4 @@
-package com.wink.utils;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.Random;
-
-import android.content.Context;
-import android.util.Log;
-
-import com.google.android.gcm.GCMRegistrar;
-import com.wink.R;
-import com.wink.localstorage.UserSharedPreferences;
-import com.wink.webservices.HttpConstants;
 
 public final class ServerUtilities {
 	private static final int MAX_ATTEMPTS = 5;

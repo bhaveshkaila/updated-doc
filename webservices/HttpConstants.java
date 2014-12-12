@@ -1,4 +1,3 @@
-package com.wink.webservices;
 
 public class HttpConstants {
 

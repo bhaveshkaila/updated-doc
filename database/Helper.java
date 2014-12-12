@@ -1,22 +1,5 @@
-package com.wink.database;
 
-/**
- * Created by bhavesh.kaila on 31/7/13.
- */
 
-import java.util.ArrayList;
-import java.util.List;
-
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.SQLException;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
-
-import com.wink.chat.ChatMessage;
-import com.wink.model.User;
 
 public class WinkHelper extends SQLiteOpenHelper {
 

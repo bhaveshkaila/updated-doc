@@ -1,19 +1,5 @@
-package com.wink.activity.base;
 
-import android.content.Intent;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.view.View;
-import android.view.ViewGroup;
 
-import com.wink.R;
-/**
- * Fragment Activity to be used as base for other activities.
- * @author moti.prajapati
- *
- */
 public class BaseFragmentActivity extends FragmentActivity {
 
 	

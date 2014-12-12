@@ -1,7 +1,4 @@
-package com.wink.utils;
 
-import com.wink.webservices.HttpConstants;
-import com.wink.webservices.responsebean.BaseResponse;
 
 public class ValidationUtils {
 	/**

@@ -1,11 +1,3 @@
-package com.wink.utils;
-
-import java.io.File;
-
-import android.content.Context;
-import android.database.Cursor;
-import android.net.Uri;
-import android.provider.MediaStore;
 
 public class FileUtils {
 

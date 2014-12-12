@@ -1,10 +1,4 @@
-package com.wink.webservices.responsebean;
 
-import com.google.gson.annotations.SerializedName;
-
-/**
- * Created by bhavesh.kaila on 2/8/13.
- */
 public class ChatMessageResponse extends BaseResponse {
 
 	@SerializedName("image_id")
