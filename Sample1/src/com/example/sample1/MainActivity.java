@@ -6,12 +6,13 @@ import retrofit.Callback;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
 
+import com.example.sample1.R;
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends ActionBarActivity implements Callback<FeedlyResponse> {
+public class MainActivity extends Activity implements Callback<FeedlyResponse> {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
