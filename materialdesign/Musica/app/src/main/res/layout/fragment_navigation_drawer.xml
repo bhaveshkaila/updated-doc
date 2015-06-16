@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:orientation="vertical"
+    tools:context="com.musica.cortador.ui.fragment.NavigationDrawerFragment">
+
+    <View
+        android:id="@+id/status_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_drawer_top_height"
+        android:background="@color/PrimaryColor"/>
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_nav_dra_height"
+        android:layout_marginTop="@dimen/nav_drawer_top_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/PrimaryColor">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="fitCenter"
+            android:paddingLeft="16dp"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_header_container"
+         />
+</RelativeLayout>
