@@ -1,0 +1,112 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    productFlavors {
+        devel {
+            //Dev build Package
+            applicationId "com.goldilocks.golden11.dev"
+
+            //Beta Server Host URL
+            buildConfigField 'String', 'HOST', '"http://144.48.250.26:8035/golden11_beta/en/gl_services/"'
+
+            //Test Server Host URL
+            //buildConfigField 'String', 'HOST', '"http://144.48.250.26:8035/golden11test/en/gl_services/"'
+
+            //io fabric ApiKey
+            resValue 'string', 'io_fabric_api_key', '"24bd2231cee94f9b7a201801ec9d850e672f4dbf"'
+
+            //Dev version Code
+            versionCode 3
+
+            //Dev version name
+            versionName "1.0"
+
+        }
+
+        prod {
+
+            //Production build Package
+            applicationId "com.goldilocks.golden11"
+
+            //Live Server Host URL
+            buildConfigField 'String', 'HOST', '"http://beta.golden11.com/en/gl_services/"'
+
+            //io fabric ApiKey
+            resValue 'string', 'io_fabric_api_key', '"24bd2231cee94f9b7a201801ec9d850e672f4dbf"'
+
+            //Dev version Code
+            versionCode 5
+
+            //Dev version name
+            versionName "1.0"
+
+        }
+    }
+
+
+    defaultConfig {
+        applicationId "com.goldilocks.golden11"
+        minSdkVersion 15
+        targetSdkVersion 23
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    repositories {
+        mavenCentral()
+    }
+    compile project(':appImageChooserCropLibrary')
+    compile project(':libraryViewPager')
+    compile project(':wheellibrary')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile('com.twitter.sdk.android:twitter:1.13.1@aar') {
+        transitive = true;
+    }
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
+    compile('com.crashlytics.sdk.android:answers:1.3.6@aar') {
+        transitive = true;
+    }
+    compile 'com.sothree.slidinguppanel:library:3.3.0'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.mcxiaoke.volley:library:1.0.+'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.facebook.android:facebook-android-sdk:4.8.1'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.google.android.gms:play-services-auth:8.4.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.android.support:support-v4:23.3.0'
+    compile 'se.emilsjolander.stickylistheaders:library:2.1.0'
+    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+    compile 'com.github.gigamole.arcprogressstackview:library:1.0.2'
+
+}
